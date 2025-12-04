@@ -34,10 +34,10 @@
 
         body {
             font-family: 'Zen Maru Gothic', sans-serif;
-            background-color: var(--ac-green);
+            background-color: var(--ac-blue);
             /* 更細緻的斜紋背景 */
             background-image:
-                repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.2) 20px, rgba(255, 255, 255, 0.2) 40px);
+                repeating-linear-gradient(135deg, transparent, transparent 20px, rgba(255, 255, 255, 0.2) 20px, rgba(255, 255, 255, 0.2) 40px);
             min-height: 100vh;
             color: var(--ac-dark);
             /* 防止 iOS 左右滑動 */
@@ -248,12 +248,17 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: var(--ac-green);
+            background: var(--ac-blue);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             z-index: 999;
+        }
+        img{
+            max-width: 230px;
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -264,7 +269,9 @@
         <p style="color: white; font-weight: bold; margin-top: 20px;">正在觀測雲的流動...</p>
     </div>
     <div class="status-bar">
-        <div class="location-pill">📍新北市</div>
+       <div class="location-pill">📍新北市</div>
+      
+      
         <div id="updateTime" class="update-pill">更新中...</div>
     </div>
 
